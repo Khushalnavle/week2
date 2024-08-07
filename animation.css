@@ -1,0 +1,143 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    color: #333;
+}
+
+h2 {
+    margin: 20px 0;
+    text-align: center;
+    color: #555;
+}
+
+section {
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+
+.animate {
+    width: 200px;
+    height: 100px;
+    margin: 20px auto;
+    background-color: #ccc;
+    border: 2px solid #aaa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: transform 0.5s;
+}
+
+/* Rotation Animations */
+.rotate-top-left:hover {
+    animation: rotate-top-left 3s infinite;
+}
+
+.rotate-centre:hover {
+    animation: rotate-centre 3s infinite;
+}
+
+.rotate-x-axis:hover {
+    animation: rotate-x-axis 3s infinite;
+}
+
+@keyframes rotate-top-left {
+    0% { transform: rotate(0); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes rotate-centre {
+    0% { transform: rotate(0); transform-origin: center; }
+    100% { transform: rotate(360deg); transform-origin: center; }
+}
+
+@keyframes rotate-x-axis {
+    0% { transform: rotateX(0); }
+    100% { transform: rotateX(360deg); }
+}
+
+/* Translation Animations */
+.translate-left-right:hover {
+    animation: translate-left-right 3s infinite;
+}
+
+.translate-up-down:hover {
+    animation: translate-up-down 3s infinite;
+}
+
+.translate-path:hover {
+    animation: translate-path 3s infinite;
+}
+
+@keyframes translate-left-right {
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(200px); }
+}
+
+@keyframes translate-up-down {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(200px); }
+}
+
+@keyframes translate-path {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(200px, 0); }
+    50% { transform: translate(200px, 200px); }
+    75% { transform: translate(0, 200px); }
+    100% { transform: translate(0, 0); }
+}
+
+/* Skew & Scale Animations */
+.skew-left-right:hover {
+    animation: skew-left-right 3s infinite;
+}
+
+.skew-up-down:hover {
+    animation: skew-up-down 3s infinite;
+}
+
+.scale:hover {
+    animation: scale 3s infinite;
+}
+
+.stretch-width:hover {
+    animation: stretch-width 3s infinite;
+}
+
+.stretch-height:hover {
+    animation: stretch-height 3s infinite;
+}
+
+@keyframes skew-left-right {
+    0%, 100% { transform: skewX(0); }
+    50% { transform: skewX(20deg); }
+}
+
+@keyframes skew-up-down {
+    0%, 100% { transform: skewY(0); }
+    50% { transform: skewY(20deg); }
+}
+
+@keyframes scale {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.5); }
+}
+
+@keyframes stretch-width {
+    0%, 100% { transform: scaleX(1); }
+    50% { transform: scaleX(1.5); }
+}
+
+@keyframes stretch-height {
+    0%, 100% { transform: scaleY(1); }
+    50% { transform: scaleY(1.5); }
+}

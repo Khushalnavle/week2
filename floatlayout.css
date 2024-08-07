@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+section {
+    margin: 20px;
+}
+
+.box {
+    width: 200px;
+    height: 150px;
+    margin: 10px;
+    background-color: #ccc;
+    text-align: center;
+    line-height: 150px;
+    float: left;
+}
+
+.clear {
+    clear: both;
+}
